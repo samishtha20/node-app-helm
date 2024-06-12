@@ -38,7 +38,8 @@ This project demonstrates how to deploy a simple Node.js application on a Kubern
 
 ### 4. Create a helm chart directory and copy all the files from helm-chart directory
 - Run below command to deploy the application using helm after going to the helm directory
-    helm install node-app . 
+    helm install node-app .
+  To access the application, make an entry of node-app.local in hosts file and curl http://node-app.local after that. 
 
 ### 5. To update, make changes in maybe image pull policy and run below command
     helm upgrade node-app .
