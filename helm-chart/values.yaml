@@ -1,0 +1,24 @@
+#Number of replicas
+replicaCount: 1
+
+#Image repo, tag and pull policy (Always/Never/IfNotPresent)
+image:
+  repository: node-app2
+  tag: latest
+  imagePullPolicy: Never
+
+#Service for application
+
+service:
+  name: node-app-svc
+  port: 8080
+  targetPort: 3000
+  type: ClusterIP 
+
+#labels
+labels:
+  app: node-app
+
+
+
+

@@ -1,0 +1,4 @@
+apiVersion: v1
+name: node-app-helm
+version: 1.0.0
+description: Helm Chart for deploying node application 
